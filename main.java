@@ -9,23 +9,34 @@
 // <n> is odd
 // <n> is even
 // --------------------------------------------------------------
-boolean odd;
+import java.util.*;
+public class main {
+  public static void main(String[] args) {
+    System.out.println("\nPRACTICUM 10\n");
+    System.out.println(
+         "Will determine if a given number odd or even.\n");
+      
+    // declare input Scanner 
+    Scanner input = new Scanner(System.in);
 
-// (TO COMPLETE)
+    // get input
+    System.out.print("Enter a number: ");
+    int number = input.nextInt();
+    
+    // init to false
+    boolean odd;
 
+    // number is divisible by 2?
+    if (number % 2 == 0) 
+      odd = false;
+      
+      else
+      odd = true;
 
+    if(odd)
+      System.out.println(number + " is odd.");
+    else
+      System.out.println(number + " is even.");
+  }
+}
 
-
-
-
-
-
-
-
-
-
-// (MUST KEEP THESE LINES)
-if(odd)
-  System.out.println(n + " is odd");
-else
-  System.out.println(n + " is even");
